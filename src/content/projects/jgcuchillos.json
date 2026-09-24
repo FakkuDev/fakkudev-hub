@@ -1,0 +1,29 @@
+{
+"slug": "jgcuchillos",
+"title": "JG Cuchillos Artesanales (AUN EN PROCESO, TRABAJO ACTUAL)",
+"category": "Expositor & Preview de Artesanía",
+"tagline": "Integración de Catálogo WEB",
+"url": "https://jg-cuchillos.pages.dev/",
+"thumbnail": "../../assets/thumbs/jgcuchillos.webp",
+"summary": [
+  "Catalogo Actualizable con filtros por Materiales",
+  "Diseñada para conversión móvil y optimización de Imagenes",
+  "Optimización SEO local para captar tráfico orgánico a nivel Nacional."
+],
+"features": [
+  "Integración de WhatsApp API + Catalogo actualizable",
+  "Formulario de pedido con envío automático a WhatsApp & E-mail",
+  "Panel ADMIN con base de datos pre-configurada de bajo coste",
+  "iFrames para videos enseñando taller y forja"
+],
+"stack": ["Astro", "Tailwind", "Alpine.js", "Cloudflare Pages"],
+"hosting": "Cloudflare Pages",
+"metrics": {
+  "performance": 64,
+  "seo": 79,
+  "accessibility": 95,
+  "loadTime": "6.8s"
+},
+"status": "online",
+"order": 6
+}

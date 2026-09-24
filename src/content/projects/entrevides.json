@@ -1,0 +1,29 @@
+{
+"slug": "entreviñas",
+"title": "Entre Viñas",
+"category": "Expositor & Preview de Restaurante",
+"tagline": "Integración de Google Maps & Whatsapp para reservas directas.",
+"url": "https://entrevidesmedrano.fakkudev.workers.dev",
+"thumbnail": "../../assets/thumbs/entrevides.webp",
+"summary": [
+  "Plataforma de exposición directa para un flujo de Reservas mayor",
+  "Diseñada para conversión móvil.",
+  "Optimización SEO local para captar tráfico orgánico de la región de Rivadavia y Medrano."
+],
+"features": [
+  "Integración de Google Maps + Ubicación + Reviews",
+  "Formulario de pedido con envío automático a WhatsApp",
+  "Galería de imágenes optimizada en WebP",
+  "Animaciones de entrada sutiles al hacer scroll"
+],
+"stack": ["Astro", "Tailwind", "Alpine.js", "Cloudflare Pages"],
+"hosting": "Cloudflare Pages",
+"metrics": {
+  "performance": 99,
+  "seo": 94,
+  "accessibility": 95,
+  "loadTime": "1.3s"
+},
+"status": "online",
+"order": 2
+}

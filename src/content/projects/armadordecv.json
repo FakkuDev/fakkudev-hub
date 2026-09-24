@@ -1,0 +1,29 @@
+{
+"slug": "armadordecv",
+"title": "CV Builder ATS Friendly",
+"category": "Generador de Curriculum VITAE ATS Friendly",
+"tagline": "Integración con templates ATS, datos web VIA API",
+"url": "https://armadordecv.pages.dev/",
+"thumbnail": "../../assets/thumbs/armadordecv.webp",
+"summary": [
+  "Plataforma generadora de  CVs ATS Friendly especializada en Argentina",
+  "Diseñada para conversión móvil y optimización de Descarga",
+  "Plantillas descargables"
+],
+"features": [
+  "Editor in-live de CV + apto responsive mobile",
+  "Preview in Real Time de la edición",
+  "Exportable en PDF ATS, PDF A4 Normal & PNG",
+  "Numerosas plantillas"
+],
+"stack": ["Astro", "Tailwind", "Alpine.js", "Cloudflare Pages"],
+"hosting": "Cloudflare Pages",
+"metrics": {
+  "performance": 100,
+  "seo": 94,
+  "accessibility": 95,
+  "loadTime": "1.0s"
+},
+"status": "online",
+"order": 5
+}

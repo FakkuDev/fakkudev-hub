@@ -1,0 +1,83 @@
+---
+import { getCollection } from "astro:content";
+import ProjectCard from "./ProjectCard.astro";
+
+const projects = await getCollection("projects");
+const sortedProjects = projects.sort((a, b) => a.data.order - b.data.order);
+
+// Importar todas las miniaturas en build-time
+const allImages = import.meta.glob("../assets/thumbs/*.webp", {
+    eager: true,
+}) as Record<string, unknown>;
+const imageMap = new Map<string, any>();
+for (const [path, mod] of Object.entries(allImages)) {
+    const filename = path.split("/").pop()?.replace(".webp", "");
+    const meta = ((mod as any)?.default ?? mod) as any;
+    if (filename && meta?.src) imageMap.set(filename, meta);
+}
+---
+
+<section class="grid-section" aria-labelledby="projects-heading">
+    <header class="section-header">
+        <h2 id="projects-heading" class="section-title">
+            <span class="mono-label">Proyectos</span>
+            <span class="count">
+                {sortedProjects.length.toString().padStart(2, "0")}
+            </span>
+        </h2>
+    </header>
+
+    <div class="project-grid">
+        {sortedProjects.map((project, index) => (
+            <ProjectCard
+                project={project}
+                index={index}
+                image={imageMap.get(project.data.slug)}
+            />
+        ))}
+    </div>
+</section>
+
+<style>
+    .grid-section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: var(--space-12) var(--space-4);
+    }
+    .section-header {
+        margin-bottom: var(--space-8);
+        padding-left: var(--space-2);
+    }
+    .section-title {
+        display: flex;
+        align-items: baseline;
+        gap: var(--space-3);
+    }
+    .mono-label {
+        font-family: var(--font-mono);
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--color-text-secondary);
+    }
+    .count {
+        font-family: var(--font-mono);
+        font-size: 0.875rem;
+        color: var(--color-accent);
+    }
+    .project-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+    @media (min-width: 768px) {
+        .project-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media (min-width: 1280px) {
+        .project-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+</style>

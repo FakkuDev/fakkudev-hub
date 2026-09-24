@@ -1,0 +1,29 @@
+{
+"slug": "salonkiris",
+"title": "Salon KIRIS",
+"category": "Expositor & Preview de Salón de Eventos + Redes",
+"tagline": "Integración de Google Maps & Whatsapp para reservas directas.",
+"url": "https://salonkiris.fakkudev.workers.dev/",
+"thumbnail": "../../assets/thumbs/salonkiris.webp",
+"summary": [
+  "Plataforma de exposición directa para un flujo de Reservas mayor + Información del establecimiento.",
+  "Diseñada para conversión móvil y optimización de Imagenes",
+  "Optimización SEO local para captar tráfico orgánico de la región de Rivadavia, Medrano y Junin."
+],
+"features": [
+  "Integración de Google Maps + Ubicación + Reviews + Redes",
+  "Formulario de Reserva con envío automático a WhatsApp",
+  "Galería de imágenes optimizada en WebP",
+  "Animaciones de entrada sutiles al hacer scroll"
+],
+"stack": ["Astro", "Tailwind", "Alpine.js", "Cloudflare Pages"],
+"hosting": "Cloudflare Pages",
+"metrics": {
+  "performance": 100,
+  "seo": 100,
+  "accessibility": 100,
+  "loadTime": "2.1s"
+},
+"status": "online",
+"order": 3
+}

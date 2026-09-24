@@ -1,0 +1,71 @@
+---
+import "../styles/global.css";
+
+interface Props {
+    title: string;
+    description: string;
+}
+
+const { title, description } = Astro.props;
+
+const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Facundo Gonzalez",
+    alternateName: "FakkuDev",
+    jobTitle: [
+        "Frontend Developer",
+        "Graphic Designer",
+        "Video Editor",
+        "SEO Specialist",
+    ],
+    address: {
+        "@type": "PostalAddress",
+        addressLocality: "Rivadavia",
+        addressRegion: "Mendoza",
+        addressCountry: "AR",
+    },
+    url: "https://fakkudev.com",
+    sameAs: [
+        "https://github.com/FakkuDev",
+        "https://linkedin.com/in/fjgonzalez0000",
+        "https://facebook.com/fakkudev",
+    ],
+};
+---
+
+<!doctype html>
+<html lang="es-AR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <link rel="canonical" href={Astro.url.href} />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/svg" href="/favicon.svg" />
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={Astro.url.href} />
+        <meta property="og:image" content="/og.png" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content="/og.png" />
+
+        <!-- JSON-LD Person -->
+        <script
+            type="application/ld+json"
+            set:html={JSON.stringify(jsonLd)}
+        ></script>
+    </head>
+    <body>
+        <slot />
+    </body>
+</html>

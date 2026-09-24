@@ -1,0 +1,29 @@
+{
+"slug": "mayoristapiyin",
+"title": "Mayorista Piyin",
+"category": "Muestra e Info del Local + Canal de información por WhatsApp + Redes",
+"tagline": "Integración de Google Maps & Whatsapp para acceso a catalogo completo.",
+"url": "https://mayorista-piyin.fakkudev.workers.dev/",
+"thumbnail": "../../assets/thumbs/mayoristapiyin.webp",
+"summary": [
+  "Plataforma de exposición directa para un flujo de Compras al mayor + Expllicación de Ventas",
+  "Diseñada para conversión móvil y optimización de Imagenes",
+  "Optimización SEO local para captar tráfico orgánico de la región de Rivadavia y Medrano."
+],
+"features": [
+  "Integración de Google Maps + Ubicación + Reviews + Acceso a actualizaciones por WhatsApp + Redes",
+  "Formulario de pedido con envío automático a WhatsApp",
+  "Galería de imágenes optimizada en WebP",
+  "Animaciones de entrada sutiles al hacer scroll"
+],
+"stack": ["Astro", "Tailwind", "Alpine.js", "Cloudflare Pages"],
+"hosting": "Cloudflare Pages",
+"metrics": {
+  "performance": 94,
+  "seo": 89,
+  "accessibility": 95,
+  "loadTime": "0.3s"
+},
+"status": "online",
+"order": 4
+}

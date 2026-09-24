@@ -1,0 +1,29 @@
+{
+"slug": "antulacaferesto",
+"title": "Antula Cafe & Resto",
+"category": "Expositor & Preview de Restaurante + Link al Menú",
+"tagline": "Integración de Google Maps & Whatsapp para reservas directas.",
+"url": "https://antulacaferesto.fakkudev.workers.dev/",
+"thumbnail": "../../assets/thumbs/antulacaferesto.webp",
+"summary": [
+  "Plataforma de exposición directa para un flujo de Reservas mayor + Galeria de Comidas",
+  "Diseñada para conversión móvil y optimización de Imagenes",
+  "Optimización SEO local para captar tráfico orgánico de la región de Rivadavia y Medrano."
+],
+"features": [
+  "Integración de Google Maps + Ubicación + Reviews + Acceso a Menú + Redes",
+  "Formulario de pedido con envío automático a WhatsApp",
+  "Galería de imágenes optimizada en WebP",
+  "Animaciones de entrada sutiles al hacer scroll"
+],
+"stack": ["Astro", "Tailwind", "Alpine.js", "Cloudflare Pages"],
+"hosting": "Cloudflare Pages",
+"metrics": {
+  "performance": 88,
+  "seo": 94,
+  "accessibility": 95,
+  "loadTime": "4.8s"
+},
+"status": "online",
+"order": 1
+}
